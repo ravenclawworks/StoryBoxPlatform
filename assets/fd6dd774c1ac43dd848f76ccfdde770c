@@ -1,0 +1,147 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>AMP Stories Five Page Sequence Example</title>
+    <link rel="canonical" href="https://www.stonetemple.com/amp/stories/amp-stories-five-page-sequence-code.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-0.1.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+  <!-- We use `amp-mustache` as a templating for `amp-list` -->
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    <style amp-custom>
+      amp-story {
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+      }
+      amp-story-page {
+      background: #002400; /* Old browsers */
+background: -moz-linear-gradient(top, #002400 4%, #0d8400 38%, #4ca35c 58%, #4da54d 63%, #005700 83%, #002400 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #002400 4%,#0d8400 38%,#4ca35c 58%,#4da54d 63%,#005700 83%,#002400 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #002400 4%,#0d8400 38%,#4ca35c 58%,#4da54d 63%,#005700 83%,#002400 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+
+      }
+      amp-story-grid-layer h1 {
+		  font-family: 'Oswald',sans-serif;
+        font-weight: bold;
+        font-size: 2.875em;
+        font-weight: bold;
+        line-height: 1.174;
+		color: #fff;
+		  padding-bottom: 10px;
+      }
+      amp-story-grid-layer p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.5em;
+        color: #fff;
+		  letter-spacing: .02em;
+		  padding: 0px 0px 18px;
+      }
+      q {
+        font-weight: 300;
+        font-size: 1.1em;
+      }
+	  ul li {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	  }
+	  a {
+		color: silver;
+	  }
+      amp-story-grid-layer.bottom {
+        align-content:end;
+      }
+      amp-story-grid-layer.noedge {
+        padding: 0px;
+      }
+      amp-story-grid-layer.center-text {
+        align-content: center;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+      }
+      .banner-text {
+        text-align: center;
+        line-height: 2em;
+      }
+	  .{
+		background-color: #fff;
+
+	  }
+    </style>
+  </head>
+  <body>
+ 
+    <amp-story standalone title="Difference between a URL, a web page and a link" publisher="publisher" publisher-logo-src="https://www.stonetemple.com/amp/stories/images/publisher.png" poster-portrait-src="https://www.stonetemple.com/amp/stories/images/publisher-portrait.png" bookend-config-src="https://www.stonetemple.com/amp/stories/upl.json">
+      <amp-story-page id="cover">
+		
+
+        <amp-story-grid-layer template="vertical">
+          <amp-list height="24"
+                    layout="fixed-height"
+                    src="https://192.168.0.20:1880/data"
+                    binding="no">
+            <template type="amp-mustache">
+              Price: ${{price}}
+            </template>
+          </amp-list>
+          <h1>What is the DIFF between a URL, a web page and a link?</h1>
+          <p>The words URL, web page and link are often used interchangeably, but what do they actually mean?</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+ 
+      <amp-story-page id="page1">
+  
+		<amp-story-grid-layer template="vertical">
+			<h1>URL</h1>
+		  <p>The URL is the location of a file on the web. It can be a web page, an image, a spreadsheet, a stylesheet or many any other kinds of files.</p>
+		  <p>The URL of this file is https://www.stonetemple.com/amp/stories/amp-stories-five-page-sequence-example2.html</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+      <amp-story-page id="page2">
+          <amp-story-grid-layer template="vertical">
+            <h1>Web page</h1>
+            <p>A web page is an HTML document. It can contain text, images, video or audio. Web pages often make use of stylesheets and JavaScript for improved user experience and functionality. This document is a web page.</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="vertical">
+          <h1>Link</h1>
+        
+          <p>A link is a mechanism for navigation from one document to another. It points to a URL. Web pages, including spreadsheets and PDFs can contain links. Plain text files, images and audio files can’t. A link to this document might look like this: &lt;a href="https://www.stonetemple.com/amp/stories/amp-stories-five-page-sequence-example2.html"&gt;What is the difference between a url, a web page and a link?&lt;/a&gt;</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+   
+      <amp-story-page id="page4">
+           <amp-story-grid-layer template="vertical">
+        <h1>In summary</h1>  
+        
+          <ul>
+		  <li>A URL is the address (the location) of a specific file on the web.</li>
+		  <li>A web page is an HTML document. A web page has a specific URL.</li>
+		  <li>A link enables a user to go from one URLto another.</li>
+		  </ul>
+
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+    </amp-story>
+
+  </body>
+</html>
